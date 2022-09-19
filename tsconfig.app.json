@@ -1,12 +1,6 @@
 {
+	"extends": "./tsconfig.json",
 	"compilerOptions": {
-		"sourceMap": true,
-		"declaration": false,
-		"moduleResolution": "node",
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true,
 		"lib": [
 			"es2016",
 			"dom",
@@ -15,15 +9,13 @@
 		"outDir": "../out-tsc/app",
 		"target": "es2015",
 		"module": "esnext",
-		"baseUrl": "",
-		"types": [],
-		"resolveJsonModule": true
+		"types": []
 	},
 	"include": [
-		"**/*"
+		"src/**/*"
 	],
 	"exclude": [
-		"test.ts",
+		"src/test.ts",
 		"**/*.spec.ts"
 	]
 }
